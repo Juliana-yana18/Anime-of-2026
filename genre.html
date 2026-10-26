@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Genre - Best Anime of 2026</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Times New Roman", serif;
+            color: white;
+            background-image: url("pictures/14.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: #111;
+        }
+
+        .overlay {
+            min-height: 100vh;
+            background: rgba(0, 0, 0, 0.78);
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 15px 15px;
+        }
+
+        header h1 {
+            font-size: clamp(32px, 6vw, 55px);
+            margin: 0 0 10px;
+        }
+
+        header p {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        nav {
+            text-align: center;
+            padding: 18px 10px;
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+            margin: 0 20px;
+        }
+
+        nav a {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 7px 10px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: orange;
+        }
+
+        main {
+            max-width: 1250px;
+            margin: auto;
+            padding: 25px 20px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 30px;
+            margin: 25px 0 15px;
+        }
+
+        .intro {
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.7;
+            max-width: 900px;
+            margin: 20px auto 30px;
+        }
+
+        .genre-section {
+            margin-bottom: 35px;
+        }
+
+        .genre-section h2 {
+            text-align: left;
+            font-size: 28px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+            padding-bottom: 12px;
+        }
+
+        .anime-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 22px;
+            margin: 30px 0;
+        }
+
+        .anime-card {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            padding: 10px;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .anime-card:hover {
+            transform: translateY(-6px);
+            background: rgba(255, 165, 0, 0.12);
+        }
+
+        .anime-card a {
+            display: block;
+            color: white;
+            text-decoration: none;
+        }
+
+        .anime-card img {
+            display: block;
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 5px;
+            transition: opacity 0.3s;
+        }
+
+        .anime-card img:hover {
+            opacity: 0.8;
+        }
+
+        .anime-card p {
+            font-size: 16px;
+            line-height: 1.4;
+            margin: 12px 0 5px;
+        }
+
+        .section-divider {
+            border: none;
+            border-top: 1px solid white;
+            margin: 40px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid white;
+            background: rgba(0, 0, 0, 0.5);
+            line-height: 1.6;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                background-attachment: scroll;
+            }
+
+            nav {
+                margin: 0 10px;
+            }
+
+            nav a {
+                font-size: 16px;
+                margin: 6px;
+            }
+
+            main {
+                padding: 15px;
+            }
+
+            .intro {
+                font-size: 16px;
+            }
+
+            .anime-gallery {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 12px;
+            }
+
+            .anime-card {
+                padding: 7px;
+            }
+
+            .anime-card img {
+                height: 190px;
+            }
+
+            .anime-card p {
+                font-size: 14px;
+            }
+
+            .genre-section h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div class="overlay">
+
+    <!-- HEADER -->
+    <header>
+        <h1>BEST ANIME OF 2026</h1>
+        <p>The History of Anime</p>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="genre.html" class="active">Genre</a> |
+        <a href="gallery.html">Photos</a> |
+        <a href="upcoming.html">Upcoming Series</a> |
+        <a href="about.html">About Us</a>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <section>
+            <h2>ANIME GENRES</h2>
+
+            <p class="intro">
+                Discover different anime genres and explore their
+                unique stories, characters, and adventures.
+                From heartwarming romance to exciting action,
+                terrifying horror, and imaginative science fiction,
+                there is an anime for every fan.
+            </p>
+        </section>
+
+        <!-- ROMANCE -->
+        <section class="genre-section">
+            <h2>ROMANCE</h2>
+
+            <div class="anime-gallery">
+
+                <div class="anime-card">
+                    <a href="https://www.imdb.com/title/tt37614297/">
+                        <img src="pictures/smoking.jpg"
+                             alt="Smoking Behind the Supermarket with You">
+                        <p>Smoking Behind the Supermarket with You</p>
+                    </a>
+                </div>
+
+                <div class="anime-card">
+                    <a href="https://www.imdb.com/title/tt39123061/">
+                        <img src="pictures/ram.jpg" alt="The Ramparts of Ice">
+                        <p>The Ramparts of Ice</p>
+                    </a>
+                </div>
+
+                <div class="anime-card">
+                    <a href="https://www.imdb.com/title/tt28919914/">
+                        <img src="pictures/100.jpg"
+                             alt="The 100 Girlfriends Who Really, Really, Really, Really, Really Love You">
+                        <p>The 100 Girlfriends Who Really, Really, Really, Really, Really Love You</p>
+                    </a>
+                </div>
+
+                <div class="anime-card">
+                    <a href="https://www.imdb.com/title/tt36034547/">
+                        <img src="pictures/ui.jpg" alt="You and I Are Polar Opposites">
+                        <p>You and I Are Polar Opposites</p>
+                    </a>
+                </div>
+
+                <div class="anime-card">
+                    <a href="https://www.imdb.com/title/tt37182080/">
+                        <img src="pictures/go.jpg" alt="Go for It, Nakamura-kun!!">
+                        <p>Go for It, Nakamura-kun!!</p>
+                    </a>
+                </div>
+
+                <div class="anime-card">
+                    <a href="https://www.imdb.com/title/tt39050141/">
+                        <img src="pictures/love.jpg" alt="Love Through a Prism">
+                        <p>Love Through a Prism</p>
+                    </a>
+                </div>
+
+                <div class="anime-card">
+                    <a href="https://www.imdb.com/title/tt39304754/">
+                        <img src="pictures/un.jpg" alt="Red River">
+                        <p>Red River</p>
+                    </a>
+                </div>
+
+                <div class="anime-card">
+                    <a href="https://www.imdb.com/title/tt38647911/">
+                        <img src="pictures/soon.jpg"
+                             alt="The Invisible Man and His Soon-To-Be Wife">
+                        <p>The Invisible Man and His Soon-To-Be Wife</p>
+                    </a>
+                </div>
+
+                <div class="anime-card">
+                    <a href="https://www.imdb.com/title/tt26743760/">
+                        <img src="pictures/apo.jpg" alt="The Apothecary Diaries">
+                        <p>The Apothecary Diaries</p>
+                    </a>
+                </div>
+
+                <div class="anime-card">
+                    <a href="https://www.imdb.com/title/tt22248376/">
+                        <img src="pictures/freiren.jpg"
+                             alt="Frieren: Beyond Journey's End">
+                        <p>Frieren: Beyond Journey's End</p>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- ACTION -->
+        <section class="genre-section">
+            <h2>ACTION</h2>
+
+            <div class="anime-gallery">
+
+                <div class="anime-card">
+                    <a href="https://www.imdb.com/title/tt5607616/">
+                        <img src="pictures/rezero.jpg"
+                             alt="Re:ZERO -Starting Life in Another World">
+                        <p>Re:ZERO -Starting Life in Another World</p>
+                    </a>
+                </div>
+
+                <div class="anime-card">
+                    <a href="https://www.imdb.com/title/tt32991344/">
+                        <img src="pictures/clevatess.jpg" alt="Clevatess">
+                        <p>Clevatess</p>
+                    </a>
+                </div>
+
+                <div class="anime-card">
+                    <a href="https://www.imdb.com/title/tt12343534/">
+                        <img src="pictures/juju.jpg" alt="Jujutsu Kaisen Season 3">
+                        <p>Jujutsu Kaisen (Season 3)</p>
+                    </a>
+                </div>
+
+                <div class="anime-card">
+                    <a href="https://www.imdb.com/title/tt13911284/">
+                        <img src="pictures/hell.jpg" alt="Hell's Paradise Season 2">
+                        <p>Hell's Paradise (Jigokuraku) Season 2</p>
+                    </a>
+                </div>
+
+                <div class="anime-card">
+                    <a href="https://www.imdb.com/title/tt38268282/">
+                        <img src="pictures/jojo.jpg"
+                             alt="JoJo's Bizarre Adventure: Steel Ball Run">
+                        <p>JoJo's Bizarre Adventure: Steel Ball Run</p>
+                    </a>
+                </div>
+
+                <div class="anime-card">
+                    <a href="https://www.imdb.com/title/tt14986406/">
+                        <img src="pictures/bleach.jpg"
+                             alt="Bleach: Thousand-Year Blood War">
+                        <p>Bleach: Thousand-Year Blood War</p>
+                    </a>
+                </div>
+
+                <div class="anime-card">
+                    <a href="https://www.imdb.com/title/tt41278592/">
+                        <img src="pictures/red.jpg" alt="Red River">
+                        <p>Red River</p>
+                    </a>
+                </div>
+
+                <div class="anime-card">
+                    <a href="https://www.imdb.com/title/tt37968925/">
+                        <img src="pictures/Sekiro.jpg" alt="Sekiro: No Defeat">
+                        <p>Sekiro: No Defeat</p>
+                    </a>
+                </div>
+
+                <div class="anime-card">
+                    <a href="https://www.imdb.com/title/tt17069148/">
+                        <img src="pictures/sako.jpg" alt="Sakamoto Days">
+                        <p>Sakamoto Days</p>
+                    </a>
+                </div>
+
+                <div class="anime-card">
+                    <a href="https://www.imdb.com/title/tt13616990/">
+                        <img src="pictures/chain.jpg" alt="Chainsaw Man">
+                        <p>Chainsaw Man</p>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- HORROR -->
+        <section class="genre-section">
+            <h2>HORROR</h2>
+
+            <div class="anime-gallery">
+
+                <div class="anime-card">
+                    <img src="pictures/DEATH.jpg" alt="Death Note">
+                    <p>Death Note</p>
+                </div>
+
+                <div class="anime-card">
+                    <img src="pictures/summer.jpg" alt="The Summer Hikaru Died">
+                    <p>The Summer Hikaru Died</p>
+                </div>
+
+                <div class="anime-card">
+                    <img src="pictures/another.jpg" alt="Another">
+                    <p>Another</p>
+                </div>
+
+                <div class="anime-card">
+                    <img src="pictures/hell.jpg" alt="Hell's Paradise">
+                    <p>Hell's Paradise</p>
+                </div>
+
+                <div class="anime-card">
+                    <img src="pictures/perfect.jpg" alt="Perfect Blue">
+                    <p>Perfect Blue</p>
+                </div>
+
+                <div class="anime-card">
+                    <img src="pictures/bleach.jpg" alt="Bleach: Thousand-Year Blood War">
+                    <p>Bleach: Thousand-Year Blood War</p>
+                </div>
+
+                <div class="anime-card">
+                    <img src="pictures/meru.jpg" alt="Mieruko-chan">
+                    <p>Mieruko-chan</p>
+                </div>
+
+                <div class="anime-card">
+                    <img src="pictures/promisee.jpg" alt="The Promised Neverland">
+                    <p>The Promised Neverland</p>
+                </div>
+
+                <div class="anime-card">
+                    <img src="pictures/tor.jpg" alt="Corpse Party: Tortured Souls">
+                    <p>Corpse Party: Tortured Souls</p>
+                </div>
+
+                <div class="anime-card">
+                    <img src="pictures/le.jpg" alt="Le Portrait de Petite Cosette">
+                    <p>Le Portrait de Petite Cosette</p>
+                </div>
+
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- SCI-FI -->
+        <section class="genre-section">
+            <h2>SCI-FI</h2>
+
+            <div class="anime-gallery">
+
+                <div class="anime-card">
+                    <img src="pictures/DR.jpg" alt="Dr. Stone: Science Future">
+                    <p>Dr. Stone: Science Future</p>
+                </div>
+
+                <div class="anime-card">
+                    <img src="pictures/CYBER.jpg" alt="Cyberpunk: Edgerunners">
+                    <p>Cyberpunk: Edgerunners</p>
+                </div>
+
+                <div class="anime-card">
+                    <img src="pictures/PSYCO.jpg" alt="Psycho-Pass">
+                    <p>Psycho-Pass</p>
+                </div>
+
+                <div class="anime-card">
+                    <img src="pictures/1.jpg"
+                         alt="Ghost in the Shell: Stand Alone Complex">
+                    <p>Ghost in the Shell: Stand Alone Complex</p>
+                </div>
+
+                <div class="anime-card">
+                    <img src="pictures/2.jpg" alt="Neon Genesis Evangelion">
+                    <p>Neon Genesis Evangelion</p>
+                </div>
+
+                <div class="anime-card">
+                    <img src="pictures/3.jpg" alt="Cowboy Bebop">
+                    <p>Cowboy Bebop</p>
+                </div>
+
+                <div class="anime-card">
+                    <img src="pictures/8.jpg" alt="Kaiju No. 8">
+                    <p>Kaiju No. 8</p>
+                </div>
+
+                <div class="anime-card">
+                    <img src="pictures/4.jpg"
+                         alt="Legend of the Galactic Heroes">
+                    <p>Legend of the Galactic Heroes</p>
+                </div>
+
+                <div class="anime-card">
+                    <img src="pictures/7.jpg" alt="Fire Force">
+                    <p>Fire Force</p>
+                </div>
+
+                <div class="anime-card">
+                    <img src="pictures/9.jpg" alt="Apocalypse Hotel">
+                    <p>Apocalypse Hotel</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            Author: Juliana Isabel Servano<br>
+            Year: 2026<br>
+            Place: Miagao, Iloilo, Philippines
+        </p>
+
+        <p>
+            &copy; 2026 All Rights Reserved.
+        </p>
+    </footer>
+
+</div>
+</body>
+</html>
